@@ -1,0 +1,1 @@
+close allclear allclc[x, y]=meshgrid(1:300,1:200);B(1:200,1:300,1)=255;B(1:200,1:300,2:3)=0;mask=x>300/200*y;B(:,:,1)=B(:,:,1).*mask;%B(:,:,2)=B(:,:,2).*mask;%B(:,:,3)=B(:,:,3).*mask;B=uint8(B);imshow(B)

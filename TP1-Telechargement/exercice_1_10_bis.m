@@ -1,0 +1,1 @@
+close allclear allclc[x, y]=meshgrid(1:300,1:200);B1(1:200,1:300,1)=255;B1(1:200,1:300,2:3)=0;B2(1:200,1:300,1:3)=210;mask=(x-150).^2+(y-100).^2<1000;Japon(:,:,:)=B1.*mask+B2.*(1-mask);%B(:,:,2)=B(:,:,2).*mask;%B(:,:,3)=B(:,:,3).*mask;Japon=uint8(Japon);imshow(Japon)
